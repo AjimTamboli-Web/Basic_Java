@@ -7,7 +7,7 @@ public class DataType_NonPrim {
  // Non-primitive data types:: Non-primitive data types are called reference types because they refer to objects.
 //  They do not store the value directly, but a reference (address) to the value/object in memory.
 // Can be created by the programmer , sized is Not fixed (depends on object size)	 
-	 
+	 // It can accept null value.
 	 //  String, Arrays, Classes, Interfaces, Objects
 	 
 	 String name = "John Snow";          // String (sequence of characters)
@@ -17,6 +17,16 @@ public class DataType_NonPrim {
 	 System.out.println(name +" " + name.toUpperCase());  // Has methods
 	 
 	 System.out.println(arr[3]);
+	 
+	 // Arrays  --> Collection of similar data type, also linear data structure.
+	 
+	 int[] marks = new int[5]; // it size of 5 but it start with 0 index
+	 marks[0] = 54;
+	 marks[1] = 76;
+	 marks[2] = 87;
+	 marks[3] = 98;
+	 marks[4] = 12;
+	 System.out.println(marks[3]);
 	 
 	 
 	}
