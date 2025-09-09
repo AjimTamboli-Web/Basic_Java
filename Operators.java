@@ -83,7 +83,18 @@ public class Operators {
 		System.out.println("g == f: " + (g == f));
 		System.out.println("f != d: " + (f != d));
 		
-		
+/* *4) Logical Operator :: used to perform logical "AND", "OR", and "NOT" operations.
+	  //used to combine two or more conditions/constraints or to complement the evaluation of the original condition under particular consideration.
+		                 *   AND Operator (&&): If( a && b ) [if true execute else don't]
+		                 *   OR Operator (||): If( a || b) [if one of them is true to execute; else don't]
+		                 *   NOT Operator (!): !(a<b) [returns false if a is smaller than b]                  */
+		int e = 34, q = 21, r = 65;
+	    boolean con1 = e>q, con2 = q>r;
+	    System.out.println("Using AND Operator(&&) : " + (con1 && con2)); // Returns true if both statements are true
+	    System.out.println("Using OR Operator(||) : " + (con2 || con1));  // Returns true if one of the statements is true
+	    System.out.println("Using NOT Operator(!) : " + (!con2));  // Reverse the result, returns false if the result is true
+	    
+	    
 		
 	}
 
