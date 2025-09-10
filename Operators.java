@@ -94,8 +94,10 @@ public class Operators {
 	    System.out.println("Using OR Operator(||) : " + (con2 || con1));  // Returns true if one of the statements is true
 	    System.out.println("Using NOT Operator(!) : " + (!con2));  // Reverse the result, returns false if the result is true
 	    
-	    
+/* *5) Unary Operator :: Unary Operators need only one operand.  (+,-,++,--,!)
+                        They are used to increment, decrement, or negate a value. 	    
 		
+		                                                 */
 	}
 
 }

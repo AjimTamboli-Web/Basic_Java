@@ -5,7 +5,7 @@ public class Data_Types {
 
 	public static void main(String[] args) {
 		// Data types :
-		// Primitive Data types :: byte,short String, int, float, double, char, boolean
+		// Primitive Data types :: byte,short, int, float, double, char, boolean
 		// Non-Primitive Data types :: String, Arrays, Classes.
 		// Variables are containers for storing data values.
 		String  name =  "Tom";  
