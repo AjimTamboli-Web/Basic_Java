@@ -9,7 +9,7 @@ public class Operators {
 		  
 
 		   Java divided the operators into following groups::
-			1) Arithmetic Operator   => 	+,-,*,/,%,++,-- 
+			1) Arithmetic Operator   => 	+, -, *, /, % 
 			
 	2) Relational/Comparison Operators =>    ==, !=, >, <, >=, <=          
 	
@@ -17,9 +17,11 @@ public class Operators {
 			
 			4) Logical Operators	 => 	&&,||,!
 			
-			5) Bitwise Operators	 => 	AND(&),OR(|),XOR(^),NOT(~),Left Shift(<<),Right Shift(>>)
+			5) Unary Operators => +, -, ++, --, !
 			
-			6) Ternary Operator      =>     condition ? value_if_true : value_if_false
+			6) Bitwise Operators	 => 	AND(&),OR(|),XOR(^),NOT(~),Left Shift(<<),Right Shift(>>)
+			
+			7) Ternary Operator      =>     condition ? value_if_true : value_if_false
 
 	   			*/
 		System.out.println("Its a binary operators."); 
@@ -35,27 +37,6 @@ public class Operators {
 		System.out.println("************ Arithmetic operators *********");
 		System.out.println("Addition ::  " + z + "\nSubstraction is :: " + x + "\nMultiplication is :: " + y + "\nSubtraction is :: " + w + "\nModulus is :: " +v);
 		 
-		//increment and decrement =>  unary operators ++ and -- used to increase and decrease a value by 1. 
-		// increment ++  :: pre and post 
-		
-		int num = 5;
-		num++;  //5		 Post => increase later :: first uses the value, then increases it 
-		++num;  //7	 	 Pre  => increase first :: first increases the value, then uses it.
-		num++;  //7
-		
-	//                      8      8         10        10	
-		System.out.println(num+ (num++) + (++num) + (num++));
-		System.out.println(num); // 11
-		
-		// decrement --  :: pre and post
-		
-		int no = 12;
-		no--;  //12		post => decrease later :: first uses the value then decrease it.
-		--no;  //10		pre  => decrease first :: first decrease the value, then uses it.
-		no--;  //10
-	// 	                   9      8        8        7        5
-		System.out.println(no + (--no) + (no--) + (no--) + (--no));
-		System.out.println(no); // 5
 		
 //*2) Assignment Operator :: it used to assign a value to any variable.		
 		
@@ -96,8 +77,49 @@ public class Operators {
 	    
 /* *5) Unary Operator :: Unary Operators need only one operand.  (+,-,++,--,!)
                         They are used to increment, decrement, or negate a value. 	    
-		
+	          (-)  Negates the value. (+)  Indicates a positive value (automatically converts byte, char, or short to int).
+              (++)  Increments by 1. Post-Increment: Uses value first, then increments.
+                                     Pre-Increment: Increments first, then uses value.
+              (--) Decrements by 1.  Post-Decrement: Uses value first, then decrements.
+                                     Pre-Decrement: Decrements first, then uses value.
+               (!) Inverts a boolean value.	
 		                                                 */
+	
+	    int abc = +23;  // No is positive
+	    System.out.println("No is Positive :: " + abc);
+	    int xyz = -abc;  // No is Negative
+	    System.out.println("No is Negative :: " + xyz);
+	    
+	  //increment and decrement =>  unary operators ++ and -- used to increase and decrease a value by 1. 
+	  		// increment ++  :: pre and post 
+	  		
+	  		int num = 5;
+	  		num++;  //5		 Post => increase later :: first uses the value, then increases it 
+	  		++num;  //7	 	 Pre  => increase first :: first increases the value, then uses it.
+	  		num++;  //7
+	  		
+	  	//                      8      8         10        10	
+	  		System.out.println(num+ (num++) + (++num) + (num++));
+	  		System.out.println(num); // 11
+	  		
+	  		// decrement --  :: pre and post
+	  		
+	  		int no = 12;
+	  		no--;  //12		post => decrease later :: first uses the value then decrease it.
+	  		--no;  //10		pre  => decrease first :: first decrease the value, then uses it.
+	  		no--;  //10
+	  	// 	                   9      8        8        7        5
+	  		System.out.println(no + (--no) + (no--) + (no--) + (--no));
+	  		System.out.println(no); // 5
+	    
+	  		// (!) Not Operator :: This is used to convert true to false or vice versa. Basically, it reverses the logical state of an operand.
+	  		
+	  		int h = 10;
+	  		int j = 200;
+	  		System.out.println("H is less Than j::  " + (h<j));
+	  		System.out.println("J is greter than H:: " + (j>h));
+	  		System.out.println("H is less Than j::  " + !(h<j));  // Using !
+	  		System.out.println("J is greter than H:: " + !(j>h)); // Using !
 	}
 
 }
