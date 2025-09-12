@@ -31,7 +31,7 @@ public class Assignment_op {
 		*/
 		   int x = 5;
 		  // x = x + 4.5;  it throw runtime error "incompatible type"
-		     x += 4.5;   // Compound assignment operator += performs an implicit type conversion
+		     x += 3.5;   // Compound assignment operator += performs an implicit type conversion
 		//   x = (int)(x + 4.5);             automatic narrowing primitive conversion from double to int
 		   System.out.println(x); 
 		   
