@@ -6,12 +6,12 @@ public class Conditional_statements {
 		
 	/* * Conditions and if statements let you control the flow of your program - deciding which code runs, and which code is skipped.	
 	   * Every if statement needs a condition that results in true or false. if statements work hand-in-hand with boolean values.
-	   * Most often, conditions are created using comparison operators, like the ones below: # Less than: a < b
-																							 # Less than or equal to: a <= b
-	*  Java has the following conditional statements:										 # Greater than: a > b
-	Use (if) to specify a block of code to be executed, if a specified condition is true.	 # Greater than or equal to: a >= b
-	Use (else) to specify a block of code to be executed, if the same condition is false.	 # Equal to: a == b
-	Use (else-if) to specify a new condition to test, if the first condition is false.		 # Not equal to: a != b
+	   * Most often, conditions are created using comparison operators, like the ones below:    # Less than: a < b
+																							    # Less than or equal to: a <= b
+	*  Java has the following conditional statements:										    # Greater than: a > b
+	Use (if) to specify a block of code to be executed, if a specified condition is true.	    # Greater than or equal to: a >= b
+	Use (if-else) to specify a block of code to be executed, if the same condition is false.    # Equal to: a == b
+	Use (else-if) to specify a new condition to test, if the first condition is false.		    # Not equal to: a != b
 	Use (Nested-if) to specify If the outer condition is true the inner conditions are checked and executed accordingly.
 	Use (switch) to specify many alternative blocks of code to be executed.
 		
