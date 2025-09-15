@@ -8,6 +8,9 @@ public class Program_ifElse {
 				
 		// This program for calculate % for salary to income tax like GST
 		Scanner sc = new Scanner(System.in);
+		
+	
+		
 		System.out.print("Enter the Amount : ");
 		double amount = sc.nextDouble();
 		
@@ -43,6 +46,7 @@ public class Program_ifElse {
 			System.out.println("Wrong amount.Please check again.");
 		}
 
+	
 		sc.close();
 		
 	}
