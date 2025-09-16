@@ -1,4 +1,4 @@
-package java_Operators;
+package java_plane.Operators_in_Details;
 
 public class Assignment_op {
 
