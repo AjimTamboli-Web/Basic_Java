@@ -72,6 +72,33 @@ public class For_loop {
 			
 		}
 		
+		System.out.println("***********************");
+		
+		// in initialization section we can take only valid java statement including SOP		
+		int m = 0;
+		for(System.out.println("Hello");m<3;m++) {
+			System.out.println("World");
+		}
+	
+		System.out.println("***********************");
+		
+		// Prime Number
+		
+		for(int i = 2;i<=20;i++) { 		// range
+			boolean isPrime = true;
+
+			for(int k = 2;k<i;k++) {  	// inner loop compare outer loop
+				
+				if(i%k ==0) {        // mod remain checking
+					
+					isPrime = false;
+				}
+			  }
+		       if(isPrime==true) {        // insert a values
+			     System.out.println("Prime : " + i);
+		       }
+		}
+		
 	}
 
 }
