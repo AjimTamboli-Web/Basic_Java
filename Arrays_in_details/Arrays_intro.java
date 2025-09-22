@@ -26,8 +26,16 @@ public class Arrays_intro {
 		for(int a:arr1) {          // using for-each print all values
 			System.out.println(a);
 		}
+		System.out.println("***************************");
+// ** System.out.println(arr2[6]);   // when you access the elements outside the array size its ArrayIndexOutOfBoundExceptin error
 		
-		System.out.println(arr2[6]);   // when you access the elements outside the array size its ArrayIndexOutOfBoundExceptin error
+ //  when you want to insert a value in arrays using loops 	
+		int[] arr4 = new int[20];
+		for(int i=0;i<arr4.length;i++) {
+			arr4[i] = i+5;               // insert a value in array
+			System.out.println("index no: " + i + " value is: " + arr4[i]);
+		}
+		System.out.println(arr4[0]);    // o/p : 5
 		
 	}
 
