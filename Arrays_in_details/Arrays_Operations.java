@@ -22,6 +22,17 @@ public class Arrays_Operations {
 			}
 		}
 		System.out.println("Minimum: " + min + " Maximum: " + max);
+	
+	
+	// inserting a values using loops
+		
+		int[] arr1 = new int[5];
+		
+		for(int j=0;j<arr1.length;j++) {
+			arr1[j] = j+5;              // operations on values
+			System.out.println("index of: "+j + " value is: "+arr1[j]);
+		}
+	
 	}
 
 }
