@@ -38,13 +38,14 @@ public class Arrays {
         }
         System.out.println("Sum: " + sum);
 
-    System.out.println("*****************************");     
-   // Highest and lowest value
+    System.out.println("*****************************");  
+    
+   // Highest and lowest value        1st way
     int [] arr1 = new int[5];
     arr1[0] = 2;
     arr1[1] = 32; 
     arr1[2] = 564;
-    arr1[3] = 23;
+    arr1[3] = -23;
     arr1[4] = 76;
     
     int min = arr1[0];
@@ -62,10 +63,33 @@ public class Arrays {
     System.out.println("Max: " + max + " Min: " + min);
     System.out.println("*****************************");     
     
+    // find lowest and highest value       2nd way
     
+    int[] numbers = new int[] {23,56,-76,89,34,656,7,-345}; 
     
+    int maxi = Integer.MIN_VALUE;
+    int mini = Integer.MAX_VALUE;
     
+    for (int l = 0;l<numbers.length;l++) {
+    	
+    	if(numbers[l] > maxi) {
+    		  maxi = numbers[l];
+    	}
+    	if(numbers[l] < mini) {
+    		mini = numbers[l];
+    	}
+    }
+    System.out.println("Maximum val: " + maxi + " Minimum val: " + mini);
+    System.out.println("******************************************");
     
+    // insert a value in array
+    
+    int a[] = new int[10];
+    for(int w=0;w<10;w++) {
+    	a[w] = w+5;
+    	System.out.println( w +" index value of array: " + a[w]);
+    }
+    System.out.println(a[0] + "position");
     
     
     
