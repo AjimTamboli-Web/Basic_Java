@@ -21,13 +21,13 @@ public class Arrays_intro {
 		int[] arr2 = new int[5];                // declare array size
 		int[] arr3 = new int[] {23,87,45,9,23,5};
 		
-		arr1[0] = 83;    // changing the first element to 83
+		arr3[0] = 83;    // changing the first element to 83
 		
 		for(int a:arr1) {          // using for-each print all values
 			System.out.println(a);
 		}
 		System.out.println("***************************");
-// ** System.out.println(arr2[6]);   // when you access the elements outside the array size its ArrayIndexOutOfBoundExceptin error
+ // ** System.out.println(arr2[6]);   // when you access the elements outside the array size its ArrayIndexOutOfBoundExceptin error
 		
  //  when you want to insert a value in arrays using loops 	
 		int[] arr4 = new int[20];
