@@ -32,7 +32,8 @@ public class Arrays_Operations {
 			arr1[j] = j+5;              // operations on values
 			System.out.println("index of: "+j + " value is: "+arr1[j]);
 		}
-	
+		
+	   
 	}
 
 }
