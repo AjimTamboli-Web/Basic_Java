@@ -69,25 +69,68 @@ public class Two_Dimension_operation {
 	// *********************** change value on particular location
 			  // Ex : (2,3) = 00;
 
-			int counter = 1;
+//			int counter = 1;
+//			
+//				for(int i=0;i<arr.length;i++) {
+//					for(int j=0;j<arr[i].length;j++) {
+//						
+//			 // this one is better  arr[2][2] = -55
+//						
+//					if(i < 3 && i > 1  && j > 1 && j < 3) {      // instead of this
+//							arr[i][j] = -55;  
+//						}
+//						else {
+//						arr[i][j] = counter;	
+//					}
+//						counter++;
+//						System.out.print(arr[i][j] + "  ");
+//					}
+//					System.out.println();
+//				}
+				
+	// *************** Only prime numbers
+				
+	int counter = 1;
+	 int no =0;
+   for(int i =0;i<arr.length;i++) {  // for rows
+	
+	  for(int j =0;j<arr[i].length;j++) {   // for columns
+		
+		    if(counter == 1) {
+			   arr[i][j] = 0;
+		    }
+		counter++;
+		
+		   if(counter > 1) {
+			 boolean isPrime = true;
 			
-				for(int i=0;i<arr.length;i++) {
-					for(int j=0;j<arr[i].length;j++) {
-						
-			 // this one is better  arr[2][2] = -55
-						
-					if(i < 3 && i > 1  && j > 1 && j < 3) {      // instead of this
-							arr[i][j] = -55;  
-						}
-						else {
-						arr[i][j] = counter;	
-					}
-						counter++;
-						System.out.print(arr[i][j] + "  ");
-					}
-					System.out.println();
-				}
-			
+			 for(int k = 2;k< counter;k++) {
+				 
+				   if(counter % k == 0) {
+					  isPrime = false;
+				  }
+			  }
+			 
+			 if(!isPrime) {
+				 arr[i][j] =0;
+			  }
+			    else {
+				  arr[i][j] = counter;
+				  no++;
+			    }
+		   }
+	 }	
+	  
+  }
+   
+   for(int i =0;i<arr.length;i++) {
+	   for(int j=0;j<arr[i].length;j++) {
+		   System.out.print(arr[i][j] + " ");
+	   }
+	   System.out.println();
+   }
+   
+   System.out.println("Total prime no is : " + no);
 	}
 
 }
