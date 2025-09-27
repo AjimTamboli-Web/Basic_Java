@@ -15,7 +15,7 @@ public class Do_while {
 		while(i<5);
 
 	// Armstrong Number
-		int num= 1,temp = num,sum =0;
+		int num= 456,temp = num,sum =0;
 		do {
 			int digit = temp % 10;
 			sum += digit * digit * digit;
