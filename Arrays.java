@@ -9,7 +9,9 @@ public class Arrays {
  *   Arrays in java are objects, like all other object in java, this allow you to invoke implicitly inherit from the java.lang.Object class.
  *   The first element of the array is at index 0, all elements must be of the same type, can store only Homogeneous elements.
  *   After creating array, its size is fixed, we can't change it. 	Stored in heap memory.
- *   Array types: Single dimensional, Multi-dimensional, Jagged array - array of arrays with different length 	
+ *   Array types: Single dimensional,
+ *                Multi-dimensional - 2D, 3D
+ *                Jagged array - array of arrays with different length 	
  */
 	 //	Declaration + initialization together
 		int[] i = {12,34,56,87,98,982};
