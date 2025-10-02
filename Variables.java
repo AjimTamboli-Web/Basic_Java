@@ -16,14 +16,18 @@ package java_plane;
                      -  we can't access instance variable directly from static area but we can access by using object reference,
                             but we can access instance variable directly from instance area. 
                      
- * local variable  -> Declare inside methods/ constructor/ blocks and used only there.
-                     -  it does not have default value, must be initialized before use.
+ * local variable / temporary / stack / automatic variables  :
+ 				 ->	 Declare inside methods/ constructor/ blocks for temporary used and used only there.
+                     -  JVM does not provide default value, must be initialized before use.at least default values.
                      -  it can access only in method itself.
-                     -  Stored in stack memory. 
+                     -  Stored inside a stack memory.
                      -  Exist only during the execution of that method.
+                     -  variables will be created while executing the block in which we declared it, once block execution is completes automatically local variable will be destroyed.
+                     -  Scope of local variable is a block in which we declared it.
+                     
                                
  * static variable / class level variables / Fields :
-                     -  Static variables should be declared with in the class directly but outside of any block / constructor / method.                   
+                 ->  Static variables should be declared with in the class directly but outside of any block / constructor / method.                   
                      -  Declare with static keyword, shared across all objects.
                      -  Belongs to the class, not to any object.
                      -  All objects share one copy of a static variable.
@@ -44,21 +48,21 @@ public class Variables {
 	
 		obj.age = 34;
 		obj.name = "Tom";
-		obj.company = "Wipro";
+		
 		Var.company = "TCS";
-		Var.company = "Infosys";
+		Var.company = "Infosys";   // get only latest value    
 		obj.myMethod();
-		obj.myMeth();
-		Var.myMeth();
+	
+		Var.myMeth();    // no need to call with object
 		
 			Var obj2 = new Var();
 			obj2.age = 45;
 			obj2.name = "Bob";
 			Var.company = "Cognizant";
-			Var.company = "Mahindra";
+			Var.company = "Mahindra";        // work with class directly
 			obj2.myMethod();
 			
-			Var.myMeth();
+			Var.myMeth();        // directly work with class
 	
             System.out.println("This is instance variables." + obj.age);
 	}
@@ -67,9 +71,9 @@ public class Variables {
 
 class Var{
 	
-	int age;                // instance variable
-	String name;            // instance variable
-	static String company;  // static variable
+	int age;              									  // instance variable
+	String name;        									   // instance variable
+	static String company;  									// static variable
 	
 	public void myMethod() {        // instance method
 		
