@@ -7,7 +7,7 @@ package java_plane;
  *	A method must be declared within a class. It is defined with the name of the method, followed by parentheses ().
 */	
 
-public class Java_Methods {
+public class Methods_Java {
 
 	             // method
 	public void myMethod() {    
@@ -19,7 +19,7 @@ public class Java_Methods {
 	public static void main(String[] args) {
 		
 	// create an instance of the method class	or create object of the class
-		Java_Methods obj = new Java_Methods();
+		Methods_Java obj = new Methods_Java();
 		
 		// Calling the method
 		 obj.myMethod();
