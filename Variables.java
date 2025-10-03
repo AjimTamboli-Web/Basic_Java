@@ -3,6 +3,7 @@ package java_plane;
 /*
  * A variables is like a container(memory location) used to store data, it has a name,data type and a value.
  * Variable type : instance , local , static
+ * Every variable in java should be either instance and static or local and every variable java should be primitive or reference. 
  
  * Instance variable / object level variables / Attributes : 
  *               -> If the value of a variable is varied from Object to object such type of variables are called instance variables.
@@ -24,7 +25,8 @@ package java_plane;
                      -  Exist only during the execution of that method.
                      -  variables will be created while executing the block in which we declared it, once block execution is completes automatically local variable will be destroyed.
                      -  Scope of local variable is a block in which we declared it.
-                     
+                     -  Only applicable modifier for local variable is final.
+                     -  It is thread safe, because every thread separate copy will be created. 
                                
  * static variable / class level variables / Fields :
                  ->  Static variables should be declared with in the class directly but outside of any block / constructor / method.                   
@@ -65,6 +67,9 @@ public class Variables {
 			Var.myMeth();        // directly work with class
 	
             System.out.println("This is instance variables." + obj.age);
+	      System.out.println(obj.x);
+	      System.out.println(obj2.x[0]);
+	      System.out.println(Var.y);
 	}
 
 }
@@ -75,6 +80,9 @@ class Var{
 	String name;        									   // instance variable
 	
 	static String company;  									// static variable
+	
+	int[] x = new int[3];                          // instance array
+	static int[] y = new int[4];
 	
 	public void myMethod() {        
 		
