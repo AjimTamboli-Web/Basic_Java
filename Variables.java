@@ -73,9 +73,10 @@ class Var{
 	
 	int age;              									  // instance variable
 	String name;        									   // instance variable
+	
 	static String company;  									// static variable
 	
-	public void myMethod() {        // instance method
+	public void myMethod() {        
 		
 		int id = 10;               // local variable
 		
@@ -85,7 +86,7 @@ class Var{
 	    System.out.println(company);
 	}
 	
-	public static void myMeth() {       // static method
+	public static void myMeth() {       
 		char division = 'A';            // local variable
 		
 		System.out.println("This is static method. " + division);
