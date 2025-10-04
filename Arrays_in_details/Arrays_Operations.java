@@ -4,6 +4,22 @@ public class Arrays_Operations {
 
 	public static void main(String[] args) {
 
+		// Random numbers in array
+		
+		int[] ran = new int[5];
+		
+		for(int i =0; i< ran.length;i++) {
+			
+			ran[i] = (int) (Math.random() * 10);     // using Math class and type casting for double to int with * 10 for get number 0.0 to int
+			
+			System.out.println(ran[i]);
+		}
+		
+		
+		
+		
+		
+		
 	// find largest and smallest number
 		
 //		int[] arr = new int[] {34,-6,54,89,44,13,-76,92,-24};
