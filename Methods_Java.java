@@ -18,39 +18,37 @@ package java_plane;
 					         1> instance method - Access the instance data using the object name. Declared inside a class. 
 					         2> static method   - Access the static data using the class name. Declared inside class with static keyword.                                                           
 
-*/	               
+*/
 
-public class Methods_Java {	
-	
+public class Methods_Java {
+
 	public static void main(String[] args) {
-		
-		System.out.println("Random No: " + Math.random());      // Predefined Method
-		
-		
-	// create an instance of the method class	or create object of the class
+
+		System.out.println("Random No: " + Math.random()); // Predefined Method
+
+		// create an instance of the method class or create object of the class
 		Meth obj = new Meth();
-		
+
 		// Calling the method
-		 obj.myMethod();                   // instance method  - need object to run
-		
-	     Meth.nextMeth();                // static method   - work with class directly
+		obj.myMethod(); // instance method - need object to run
+
+		Meth.nextMeth(); // static method - work with class directly
 
 	}
 
 }
 
+class Meth {
 
-class Meth{
-	   	 
-	public void myMethod() {    //instance method
-		
+	public void myMethod() { // instance method
+
 		System.out.println("I just got Executed!");
-  }
-	 
-	public static void nextMeth() {    // static method
-		
+	}
+
+	public static void nextMeth() { // static method
+
 		System.out.println("This is Static Method.");
-		
+
 	}
 
 }
