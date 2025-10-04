@@ -20,6 +20,7 @@ public class Method_ReturnValue {
 		System.out.println(cat.type());
 		cat.name();
 		System.out.println(cat.sound());
+		cat.buy(299);                       // get parameters
 		
 	System.out.println("************************************");	
 		
@@ -29,7 +30,7 @@ public class Method_ReturnValue {
 		System.out.println(dog.type());
 		dog.name();
 		System.out.println(dog.sound());
-		
+		dog.buy(345);
 	}
 
 }
@@ -41,6 +42,8 @@ class Animals{
 	String name;
 	String sound;
 	String type;
+	int price;
+	
 	final static String time = "Open at 10 To 5";
 	
 	public static void greet() {
@@ -49,11 +52,11 @@ class Animals{
 	}
 
 	public String type() {
-		System.out.print("Animal type is: " );
+		System.out.print("Animal type is: " );        // return string type
 		return type;
 	}
 	
-	public String sound() {
+	public String sound() {                  // return string sound
 		return "sound:: " + sound;
 	}
 	
@@ -61,7 +64,13 @@ class Animals{
 		System.out.println(type + " name is: " + name);	
 	}
 	
-	
+	public int buy(int price) {                          // Passing parameters
+		if(price >= 200)
+		   System.out.println("Sold at: " + price);
+		else
+		System.out.println("Amount is low!");
+		return price;
+	}
 	
 }
 
