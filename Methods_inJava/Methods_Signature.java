@@ -36,7 +36,7 @@ class Sign{
 		return a + b;
 	}
 	
-	public int mul(int a, int b) {
+	 public int mul(int a, int b) {
 		return a *b;
 	}
 	
@@ -49,6 +49,5 @@ class Sign{
 	   System.out.println(z);
 	}
 	
-	public int 
 	
 }
