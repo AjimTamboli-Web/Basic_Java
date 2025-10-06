@@ -3,6 +3,8 @@ package java_plane.Methods_inJava;
 /*
  *  we used the void keyword in greet() which indicates that the method should not return a value.
  *  If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method.
+ *  return keyword in Java is a reserved keyword which is used to exit from a method, with or without a value. 
+ *  
  */
 
 public class Method_ReturnValue {
@@ -31,6 +33,9 @@ public class Method_ReturnValue {
 		dog.name();
 		System.out.println(dog.sound());
 		dog.buy(345);
+		
+		dog.without(34);  // ex of return in if else 
+		
 	}
 
 }
@@ -48,7 +53,7 @@ class Animals{
 	
 	public static void greet() {
 		System.out.println("************ Welcome to Animal shops ***************");
-		System.out.println(" \t \t \t \t" +time);
+		System.out.println(" \t \t \t \t \t" +time);
 	}
 
 	public String type() {
@@ -70,6 +75,15 @@ class Animals{
 		else
 		System.out.println("Amount is low!");
 		return price;
+	}
+	
+	void without(int pri) {    // return in void method using if else conditions
+		if(pri < 100) {
+			System.out.println(pri);
+			return;
+		}
+		else
+			System.out.println("nothing");
 	}
 	
 }
