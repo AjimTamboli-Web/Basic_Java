@@ -36,6 +36,8 @@ public class ThisOperations {
 		 System.out.println("*********************");
 		 
 		 ThisKey jump = new ThisKey(45,76);   // Constructor Jumping
+		      jump.s = 23;
+		 
 		 
 	}
 
