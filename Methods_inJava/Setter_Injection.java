@@ -2,7 +2,7 @@ package java_plane.Methods_inJava;
 
 /*
  * Values are set after object creation. This is called setter injection (not constructor injection).
- * 
+ * Flexible, but object may be incomplete until setters are called.
  */
 
 public class Setter_Injection {
