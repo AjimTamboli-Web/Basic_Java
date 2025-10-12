@@ -65,7 +65,7 @@ public class Strings_Operations {
 	 System.out.println("Index of 'J' : " + trimmed.indexOf('J'));
 	 
 	 
-	 String var = " ";
+	 String var = "  ";
 	 System.out.println("IsBlank: " + var.isBlank()); // Returns true if the string is empty or contains only white space codepoints, otherwise false.
 	 System.out.println("IsEmpty: " + var.isEmpty()); // Returns true if, and only if, length() is 0.
 	 
