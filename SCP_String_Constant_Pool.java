@@ -20,7 +20,7 @@ public class SCP_String_Constant_Pool {
 
 	public static void main(String[] args) {
 		
-		String s1 = "Hello"; // String literals
+		String s1 = " Hello"; // String literals
 		String s2 = "Hello";
 		
 		System.out.println(s1 == s2);    // Same reference
@@ -40,7 +40,8 @@ public class SCP_String_Constant_Pool {
 		
 		System.out.println(str == str1);  // heap vs SCP
 		System.out.println(str1 == str2);  // Both SCP
-	
+	    
+		
 	}
 
 }
