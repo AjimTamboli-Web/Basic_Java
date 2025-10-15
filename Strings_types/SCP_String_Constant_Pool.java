@@ -1,4 +1,4 @@
-package java_plane;
+package java_plane.Strings_types;
 
 /*
  * String Constant Pool (SCP) is a special memory area in the Java heap that stores only one copy of each string literal.
