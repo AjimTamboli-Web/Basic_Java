@@ -69,6 +69,33 @@ public class Strings_Operations {
 	 System.out.println("IsBlank: " + var.isBlank()); // Returns true if the string is empty or contains only white space codepoints, otherwise false.
 	 System.out.println("IsEmpty: " + var.isEmpty()); // Returns true if, and only if, length() is 0.
 	 
+	 
+	 // Palindrome 
+	 
+	 String str12 = "madam";    
+     
+		boolean isPalindrome = true;
+		
+		int start = 0;
+		int end = str12.length()-1;
+		
+		while(start < end) {
+//			System.out.println(start + "  ** " + end);
+			if(str12.charAt(start) != (str12.charAt(end)) ) {
+				isPalindrome = false;
+					break;
+			}
+			start++;
+			end--;
+		}
+		
+		if(isPalindrome) {
+			System.out.println(str12 + " is Palindrome");
+		}
+		else {
+			System.out.println("Not Palindrome");
+		}
+	 
 	}
 
 }
