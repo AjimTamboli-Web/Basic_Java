@@ -1,4 +1,4 @@
-package java_plane;
+package java_plane.Strings_types;
 
 /* You cannot create a literal value of StringBuilder. SCP won't we use here.
  * StringBuilder is a mutable (changeable) sequence of characters. It’s part of the java.lang package — so no need to import it.
