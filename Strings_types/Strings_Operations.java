@@ -1,4 +1,4 @@
-package java_plane;
+package java_plane.Strings_types;
 
 /*
  * A String is a sequence of characters used to store and manipulate text.Strings are immutable, meaning once created, they cannot be changed.
