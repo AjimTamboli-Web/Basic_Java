@@ -1,4 +1,4 @@
-package java_plane;
+package java_plane.Strings_types;
 
 /*
  * 
@@ -9,9 +9,9 @@ public class String_Buffers {
 	public static void main(String[] args) {
 		
 		String ab = "adgs";
-		StringBuffer sb = new StringBuffer("SVAA");
-		
-//		System.out.println(sb.compareTo(new StringBuffer("VA")));
+		StringBuffer sb = new StringBuffer("adgs");
+		System.out.println(ab.equals(sb));
+		System.out.println(sb.compareTo(new StringBuffer("VA")));
         
 		String str = "Neveroddoreven";
 		boolean isPalindrome = true;
