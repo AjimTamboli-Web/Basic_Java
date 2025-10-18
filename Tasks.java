@@ -3,8 +3,9 @@ package java_plane;
 public class Tasks {
 
 	public static void main(String[] args) {
+
 	     
-	     Task.countDigit(3454657);
+	     Task.maxAndMin(456576167);
 	}
 }
 
@@ -87,4 +88,33 @@ class Task{
 		}
 		System.out.println("Total digit is: " + count);
 	}
+	
+	// Find Minimum and Maximum No 
+	public static void maxAndMin(int No) {
+		
+		int i = No;
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		System.out.println("Value is: " + i);
+		while(i > 0) {
+			int last = i % 10;
+			
+			if(max < last) {
+				max = last;
+			}
+			if(min > last) {
+				min = last;
+			}
+			i = i / 10;
+		}
+		System.out.println("Minimum Number is: " + min);
+		System.out.println("Maximum Number is: " + max);
+	}
+	
+	
+	
+	
 }
+
+
+
