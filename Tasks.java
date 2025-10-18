@@ -4,9 +4,8 @@ public class Tasks {
 
 	public static void main(String[] args) {
 		
-		Task.addAll(1234);
-		
-		
+	
+		Task.reverse(1234);
 	}
 }
 
@@ -42,11 +41,25 @@ class Task{
 		int digit = 0;
 		System.out.println("Number is: " + a);
 		while(a > 0) {
-			int count = a % 10;
+			int count = a % 10;    // count get the last digit of a
 			digit = digit + count;
-			a = a / 10;
+			a = a / 10;          // delete the last digit in a
 		}
 		System.out.println("Addition of all digits is: " + digit);
+	}
+	
+	// Reverse the digit
+	public static void reverse(int No) {
+		int i = No;
+		int rev = 0;
+		System.out.println("No is: " + i);
+		
+		while(i > 0) {
+			int last = i % 10;    // get last digit
+			rev = rev * 10 + last;  // add with multiply by 10 because we need extra 0 then add last digit
+			i = i / 10;               // delete the last digit
+		}
+		System.out.println("Reverse the No: " + rev);
 	}
 	
 }
