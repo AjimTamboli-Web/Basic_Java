@@ -4,7 +4,7 @@ public class Tasks {
 
 	public static void main(String[] args) {
 	     
-	     Task.multiAllDigits(2367);
+	     Task.countDigit(3454657);
 	}
 }
 
@@ -73,5 +73,18 @@ class Task{
 			i = i / 10;
 		}
 		System.out.println("Multiplication of all digits are: " + mul);
+	}
+	
+	// Count the digit in Numbers
+	public static void countDigit(int No) {
+		int i = No;
+		int count = 0;
+		System.out.println("No is: " + i);
+		
+		while(i > 0) {
+			i = i / 10;
+			count++;
+		}
+		System.out.println("Total digit is: " + count);
 	}
 }
