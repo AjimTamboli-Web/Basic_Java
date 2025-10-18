@@ -4,6 +4,7 @@ public class Tasks {
 
 	public static void main(String[] args) {
 		
+		Task.addAll(1234);
 		
 		
 	}
@@ -33,4 +34,19 @@ class Task{
 		System.out.println("After Swap: " + a + " & " + b);
 		
 	}
+	
+	// Addition of all digits
+	public static void addAll(int No) {
+		
+		int a = No;
+		int digit = 0;
+		System.out.println("Number is: " + a);
+		while(a > 0) {
+			int count = a % 10;
+			digit = digit + count;
+			a = a / 10;
+		}
+		System.out.println("Addition of all digits is: " + digit);
+	}
+	
 }
