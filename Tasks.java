@@ -3,14 +3,13 @@ package java_plane;
 public class Tasks {
 
 	public static void main(String[] args) {
-		
-	
-		Task.reverse(1234);
+	     
+	     Task.multiAllDigits(2367);
 	}
 }
 
 class Task{
-	 // Using + and - operator
+	 // Swap two Numbers Using + and - operator
 	public static void swap(int No1,int No2) {
 		int a = No1;
 		int b = No2;
@@ -21,7 +20,7 @@ class Task{
 		System.out.println("After Swap: " + a + " & " + b);
 	}
 	
-	// Using * and / operator
+	// Swap two Numbers Using * and / operator
 	public static void swap2(int No1,int No2) {
 		
 		int a = No1;
@@ -62,4 +61,17 @@ class Task{
 		System.out.println("Reverse the No: " + rev);
 	}
 	
+	// Multiply all digits 
+	public static void multiAllDigits(int No) {
+		
+		int i = No;
+		int mul = 1;
+		System.out.println("Number is: " + i);
+		while(i > 0) {
+			int last = i % 10;
+			mul = mul * last;
+			i = i / 10;
+		}
+		System.out.println("Multiplication of all digits are: " + mul);
+	}
 }
