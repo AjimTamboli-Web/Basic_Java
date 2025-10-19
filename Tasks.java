@@ -4,24 +4,24 @@ public class Tasks {
 
 	public static void main(String[] args) {
 
-	     
-	     Task.maxAndMin(456576167);
+	    
+		
 	}
 }
 
 class Task{
-	 // Swap two Numbers Using + and - operator
+	 //1 Swap two Numbers Using + and - operator
 	public static void swap(int No1,int No2) {
 		int a = No1;
 		int b = No2;
 		System.out.println("Before Swap: " + a + " & " + b);
-		a = a + b; 
-		b = a - b;  
-		a = a - b;  
+		a = a + b;  // get first addition of both
+		b = a - b;  // get the value of b first
+		a = a - b;  // last get value of a
 		System.out.println("After Swap: " + a + " & " + b);
 	}
 	
-	// Swap two Numbers Using * and / operator
+	//2 Swap two Numbers Using * and / operator
 	public static void swap2(int No1,int No2) {
 		
 		int a = No1;
@@ -34,7 +34,7 @@ class Task{
 		
 	}
 	
-	// Addition of all digits
+	//3 Addition of all digits
 	public static void addAll(int No) {
 		
 		int a = No;
@@ -48,7 +48,7 @@ class Task{
 		System.out.println("Addition of all digits is: " + digit);
 	}
 	
-	// Reverse the digit
+	//4 Reverse the digit
 	public static void reverse(int No) {
 		int i = No;
 		int rev = 0;
@@ -62,7 +62,7 @@ class Task{
 		System.out.println("Reverse the No: " + rev);
 	}
 	
-	// Multiply all digits 
+	//5 Multiply all digits 
 	public static void multiAllDigits(int No) {
 		
 		int i = No;
@@ -76,7 +76,7 @@ class Task{
 		System.out.println("Multiplication of all digits are: " + mul);
 	}
 	
-	// Count the digit in Numbers
+	//6 Count the digit in Numbers
 	public static void countDigit(int No) {
 		int i = No;
 		int count = 0;
@@ -89,7 +89,7 @@ class Task{
 		System.out.println("Total digit is: " + count);
 	}
 	
-	// Find Minimum and Maximum No 
+	//7 Find Minimum and Maximum No 
 	public static void maxAndMin(int No) {
 		
 		int i = No;
@@ -111,8 +111,35 @@ class Task{
 		System.out.println("Maximum Number is: " + max);
 	}
 	
+	//8 Find Even and Odd Number
+	public static void oddAndEven(int No) {
+		int i = No;
+		int even = 0, odd = 0, rev = 0;
+		System.out.println("Number is : " + i);
+		
+		while(i > 0) {   // not compulsory to reverse the digits but looks good to read
+			int last = i % 10;
+			rev = rev * 10 + last;
+			i = i / 10;
+		}
+		
+		while(rev > 0) {       // i became rev  because we need loop start with first digit
+			int last = rev % 10;
+				
+			if(last % 2 == 0) {		
+				even = even * 10 + last;
+			 }
+			if(last % 2 != 0) {
+				odd = odd * 10 + last;
+			 }	
+			rev = rev / 10;
+		}
+		System.out.println("Even Values: " + even);
+		System.out.println("Odd Values: " + odd);
+		
+	}
 	
-	
+	//9 Additions of odd and even numbers different
 	
 }
 
