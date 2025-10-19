@@ -3,9 +3,8 @@ package java_plane;
 public class Tasks {
 
 	public static void main(String[] args) {
-	
-	Task.evenOddAdd(123456789);
-	    
+          
+          Task.firstLastAdd(923456789);
 	}	
 }
 
@@ -159,7 +158,23 @@ class Task{
 		System.out.println("Odd Number Addition is: " + j);
 	}
 	
+	//10 Sum of First and Last digit
+	public static void firstLastAdd(int No) {
+		int no = No;
+		int first = 0;
+		int last = 0;
+		System.out.println("Number is: " + no);
 	
+		last = no % 10;
+		
+		while(no > 0) {
+		int temp = no % 10;
+			first = temp;
+			no = no / 10;
+		}
+		 int result = first + last;
+		System.out.println("Addition of First and Last digit is: " + result);
+	}
 	
 }
 
