@@ -3,10 +3,10 @@ package java_plane;
 public class Tasks {
 
 	public static void main(String[] args) {
-
+	
+	Task.evenOddAdd(123456789);
 	    
-		
-	}
+	}	
 }
 
 class Task{
@@ -140,6 +140,26 @@ class Task{
 	}
 	
 	//9 Additions of odd and even numbers different
+	public static void evenOddAdd(int No) {
+		int no = No;
+		int i = 0;
+		int j = 0;
+        System.out.println("Number is: " + no);
+     
+		while(no > 0) {
+			int last = no % 10;
+			if(last % 2 == 0) {
+				i = i + last;
+			}else {
+				j = j + last;
+			}
+			no = no / 10;
+		}
+		System.out.println("Even Number Addition is: " + i);
+		System.out.println("Odd Number Addition is: " + j);
+	}
+	
+	
 	
 }
 
