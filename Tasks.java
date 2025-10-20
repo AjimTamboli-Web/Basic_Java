@@ -2,11 +2,9 @@ package java_plane;
 
 public class Tasks {
 
-	public static void main(String[] args) {
-          
-		
-		
-          Task.firstLastAdd(923456789);
+	public static void main(String[] args) {	
+	
+		Task.isPrime(20);
 	}	
 }
 
@@ -182,7 +180,22 @@ class Task{
 	
 	
 	//12 Prime numbers
-	
+	public static void isPrime(int No) {
+		int i = No;
+		
+		for(i=2;i< No;i++) {
+			boolean flag = true;
+			for(int j = 2; j<i;j++) {
+				if(i%j == 0) {
+					flag = false;
+				}
+			}
+			if(flag == true) {
+				System.out.println("Prime No: " + i);
+			}
+		}
+		
+	}
 	
 }
 
