@@ -4,6 +4,8 @@ public class Tasks {
 
 	public static void main(String[] args) {
           
+		
+		
           Task.firstLastAdd(923456789);
 	}	
 }
@@ -175,6 +177,12 @@ class Task{
 		 int result = first + last;
 		System.out.println("Addition of First and Last digit is: " + result);
 	}
+	
+	//11 Swap only first and last digit
+	
+	
+	//12 Prime numbers
+	
 	
 }
 
