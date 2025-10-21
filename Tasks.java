@@ -4,8 +4,8 @@ public class Tasks {
 
 	public static void main(String[] args) {	
 	
+		Task.swapFirstLast(5689);
 		
-		Task.isPalinromes(1234321);
 	
 	}	
 }
@@ -178,8 +178,28 @@ class Task{
 		System.out.println("Addition of First and Last digit is: " + result);
 	}
 	
-	//11 Swap only first and last digit
-	
+	//11 Swap only first and last digit => only four digits 
+	public static void swapFirstLast(int No) {
+		int no = No;
+		int og = no;
+		int first = 0;
+		int last = 0;
+		System.out.println("Before Swapped: " + no);
+		
+		last = no % 10;
+		while(no > 0) {
+			int last2 = no % 10;
+			no = no / 10;
+			first = last2;
+		}
+		int temp = og / 10;
+		int middle = temp % 100;
+		
+		int swapped = (last * 1000) + (middle * 10) + first;
+		
+		System.out.println("After Swapped: " + swapped);
+		
+	}
 	
 	//12 Prime numbers -> no that has only two factors, 1 and itself it gives no remainder. It cannot be divided evenly by any other no.
 	public static void isPrime(int No) {
