@@ -4,7 +4,9 @@ public class Tasks {
 
 	public static void main(String[] args) {	
 	
-		Task.isPrime(20);
+		
+		Task.isPalinromes(1234321);
+	
 	}	
 }
 
@@ -179,7 +181,7 @@ class Task{
 	//11 Swap only first and last digit
 	
 	
-	//12 Prime numbers
+	//12 Prime numbers -> no that has only two factors, 1 and itself it gives no remainder. It cannot be divided evenly by any other no.
 	public static void isPrime(int No) {
 		int i = No;
 		
@@ -195,6 +197,25 @@ class Task{
 			}
 		}
 		
+	}
+	
+	//13 Palindrome -> is a number,word,sentence that reads the same forward and backward.
+	public static void isPalinromes(int No) {
+		int no = No;
+		int forward = no;
+		int backward = 0;
+		
+		while(no > 0) {
+			int last = no % 10;
+			backward = backward * 10 + last;
+			no = no / 10;
+		}
+		
+		System.out.println("Forward : " + forward + " & " + " Backward : " + backward);
+		if(forward == backward) {
+			System.out.println("No is Palindrome.");
+		}else
+			System.out.println("No is Not-Palindrome.");
 	}
 	
 }
