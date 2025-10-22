@@ -4,7 +4,7 @@ public class Tasks {
 
 	public static void main(String[] args) {	
 	
-		Task.swapFirstLast(5689);
+		Task.swapFirstLastAnyRange(123456789);
 		
 	
 	}	
@@ -239,7 +239,29 @@ class Task{
 	}
 	
 	//14 Swap only first and last digit => any no of range
-	
+	public static void swapFirstLastAnyRange(int No) {
+		
+		int no = No;
+		int og = no;
+		int digiLen = String.valueOf(no).length();    
+		int first = 0;
+		int last = no % 10;
+		
+		while(no > 0) {
+			first = no;
+			 no = no / 10;
+		}
+//		System.out.println(digiLen);
+		
+		int middle = (og % (int)Math.pow(10 , digiLen - 1)) / 10 ;
+		
+		int swap = (last * (int)Math.pow(10, digiLen - 1)) + (middle * 10) + first;
+		
+//		System.out.println(middle);
+		System.out.println(swap);
+		
+		
+	}
 }
 
 
