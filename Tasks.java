@@ -238,6 +238,8 @@ class Task{
 			System.out.println("No is Not-Palindrome.");
 	}
 	
+	//14 Swap only first and last digit => any no of range
+	
 }
 
 
