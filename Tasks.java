@@ -4,7 +4,7 @@ public class Tasks {
 
 	public static void main(String[] args) {	
 	
-		Task.swapFirstLastAnyRange(123456789);
+		
 		
 	
 	}	
@@ -71,8 +71,8 @@ class Task{
 		System.out.println("Number is: " + i);
 		while(i > 0) {
 			int last = i % 10;
-			mul = mul * last;
-			i = i / 10;
+			mul = mul * last;    // multiply by every digit and add to it  
+			i = i / 10;          // then delete that digit
 		}
 		System.out.println("Multiplication of all digits are: " + mul);
 	}
@@ -80,12 +80,12 @@ class Task{
 	//6 Count the digit in Numbers
 	public static void countDigit(int No) {
 		int i = No;
-		int count = 0;
+		int count = 0;                 // initialized the counter 0 
 		System.out.println("No is: " + i);
 		
 		while(i > 0) {
-			i = i / 10;
-			count++;
+			i = i / 10; 
+			count++;      // just increment the value of counter on every iteration 
 		}
 		System.out.println("Total digit is: " + count);
 	}
@@ -94,17 +94,17 @@ class Task{
 	public static void maxAndMin(int No) {
 		
 		int i = No;
-		int max = Integer.MIN_VALUE;
-		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;   // to compare other value initialize minimum for max find 
+		int min = Integer.MAX_VALUE;   // to compare other value initialize maximum for min find
 		System.out.println("Value is: " + i);
 		while(i > 0) {
 			int last = i % 10;
 			
-			if(max < last) {
-				max = last;
+			if(max < last) {    // compare max less than single digit to find maximum digit
+				max = last;     // then assign the value to them
 			}
-			if(min > last) {
-				min = last;
+			if(min > last) {    // compare mini greater than digit to find minimum digit
+				min = last;    // then transfer the value to them
 			}
 			i = i / 10;
 		}
@@ -127,11 +127,13 @@ class Task{
 		while(rev > 0) {       // i became rev  because we need loop start with first digit
 			int last = rev % 10;
 				
-			if(last % 2 == 0) {		
-				even = even * 10 + last;
+			if(last % 2 == 0) {		// condition for even value if remainder remain 0 
+				even = even * 10 + last;  // add one by one digit to the value
 			 }
-			if(last % 2 != 0) {
-				odd = odd * 10 + last;
+			
+			// you can also use else here then you don't need to write condition 
+			if(last % 2 != 0) {     // condition for odd value if remainder remain not 0 
+				odd = odd * 10 + last;  // add that digit in value
 			 }	
 			rev = rev / 10;
 		}
@@ -150,9 +152,9 @@ class Task{
 		while(no > 0) {
 			int last = no % 10;
 			if(last % 2 == 0) {
-				i = i + last;
+				i = i + last;      // addition even number
 			}else {
-				j = j + last;
+				j = j + last;     // addition odd number
 			}
 			no = no / 10;
 		}
@@ -167,14 +169,14 @@ class Task{
 		int last = 0;
 		System.out.println("Number is: " + no);
 	
-		last = no % 10;
+		last = no % 10;    // get last digit
 		
-		while(no > 0) {
+		while(no > 0) { 
 		int temp = no % 10;
-			first = temp;
-			no = no / 10;
+			first = temp;      // get first digit
+			no = no / 10;     // just before delete it
 		}
-		 int result = first + last;
+		 int result = first + last;    // then add first and last digit
 		System.out.println("Addition of First and Last digit is: " + result);
 	}
 	
@@ -186,16 +188,16 @@ class Task{
 		int last = 0;
 		System.out.println("Before Swapped: " + no);
 		
-		last = no % 10;
+		last = no % 10;      // last digit
 		while(no > 0) {
-			int last2 = no % 10;
+			int last2 = no % 10;   
 			no = no / 10;
-			first = last2;
+			first = last2;        // get first digit
 		}
-		int temp = og / 10;
-		int middle = temp % 100;
+		int temp = og / 10;      // temp variable for delete the last digit
+		int middle = temp % 100;   // then delete the first digit and get middle values
 		
-		int swapped = (last * 1000) + (middle * 10) + first;
+		int swapped = (last * 1000) + (middle * 10) + first;   // add one by one
 		
 		System.out.println("After Swapped: " + swapped);
 		
@@ -205,15 +207,15 @@ class Task{
 	public static void isPrime(int No) {
 		int i = No;
 		
-		for(i=2;i< No;i++) {
-			boolean flag = true;
-			for(int j = 2; j<i;j++) {
-				if(i%j == 0) {
-					flag = false;
+		for(i=2;i< No;i++) {     
+			boolean flag = true;    // get flag true on every iteration because when it in second loop it will be false 
+			for(int j = 2; j<i;j++) { // every single digit compare that digit range
+				if(i%j == 0) {      // if value get remainder zero then flag false
+					flag = false;   // to differentiate value
 				}
 			}
-			if(flag == true) {
-				System.out.println("Prime No: " + i);
+			if(flag == true) {  // inside first loop for get that  prime value
+				System.out.println("Prime No: " + i);  // print that value
 			}
 		}
 		
@@ -227,12 +229,12 @@ class Task{
 		
 		while(no > 0) {
 			int last = no % 10;
-			backward = backward * 10 + last;
+			backward = backward * 10 + last;  // reverse the value
 			no = no / 10;
 		}
 		
 		System.out.println("Forward : " + forward + " & " + " Backward : " + backward);
-		if(forward == backward) {
+		if(forward == backward) {   // compare reverse and backward to find palindrome
 			System.out.println("No is Palindrome.");
 		}else
 			System.out.println("No is Not-Palindrome.");
@@ -243,7 +245,7 @@ class Task{
 		
 		int no = No;
 		int og = no;
-		int digiLen = String.valueOf(no).length();    
+		int digiLen = String.valueOf(no).length();   // get value length using string methods  
 		int first = 0;
 		int last = no % 10;
 		
@@ -253,15 +255,19 @@ class Task{
 		}
 //		System.out.println(digiLen);
 		
-		int middle = (og % (int)Math.pow(10 , digiLen - 1)) / 10 ;
+		int middle = (og % (int)Math.pow(10 , digiLen - 1)) / 10 ;  // get middle value using delete first and last value % and /
 		
-		int swap = (last * (int)Math.pow(10, digiLen - 1)) + (middle * 10) + first;
+		int swap = (last * (int)Math.pow(10, digiLen - 1)) + (middle * 10) + first; // then add it one by one
 		
 //		System.out.println(middle);
 		System.out.println(swap);
 		
 		
 	}
+	
+	//15 Armstrong Number(narcissistic number) -> number that is equal to the sum of its own digits,each raised to the power of the number of digits.
+	
+	
 }
 
 
