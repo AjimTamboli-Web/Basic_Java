@@ -8,10 +8,10 @@ public class String_Buffers {
 
 	public static void main(String[] args) {
 		
-		String ab = "adgs";
+//		String ab = "adgs";
 		StringBuffer sb = new StringBuffer("adgs");
-		System.out.println(ab.equals(sb));
 		System.out.println(sb.compareTo(new StringBuffer("VA")));
+//		System.out.println(ab.equals(sb));
         
 		String str = "Neveroddoreven";
 		boolean isPalindrome = true;
