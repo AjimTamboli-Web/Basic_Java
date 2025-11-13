@@ -2,8 +2,8 @@ package java_plane.Methods_inJava;
 
 public class Main_Method {
    // valid methods
-   static final synchronized strictfp public void main(String... ajim){
-		
+ //  static final synchronized strictfp public void main(String... ajim){
+	static final void main(String [] args) {	
 	   System.out.println("Valid main Method.");
 	   
 //	   public static void main(String[] args) {}
