@@ -267,6 +267,7 @@ class Task{
 	
 	//15 Armstrong Number(narcissistic number) -> number that is equal to the sum of its own digits,each raised to the power of the number of digits.
 	
+	   
 	
 }
 
